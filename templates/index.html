@@ -1,0 +1,186 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!-- Hero Section-->
+<section style="background: url({% static 'img/happy.jpg' %}); background-size: cover; background-position: center center" class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <h1>Desserts Blog</h1>
+            </div>
+        </div><a href=".intro" class="continue link-scroll"><i class="fa fa-long-arrow-down"></i> Scroll Down</a>
+    </div>
+</section>
+<!-- Intro Section-->
+<section class="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="h3">About Us</h2>
+                <p class="text-big">This blog is a bakery with an atmosphere of class and sophistication and the feel of a worldly gourmet experience. We provide various of cakes and desserts. Accompanied by a terrific deli with a beautiful selection of deli meats, fresh
+                    soup, sandwiches and a variety of local cheese. We have been a family run business for over 30 years. If the marketing of grocery and the preparation and presentation of food could be considered an art form, it is obvious at Amorino’s.
+                    So come to our store today.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="featured-posts no-padding-top">
+    <div class="container">
+        <!-- Post-->
+        <div class="row d-flex align-items-stretch">
+            <div class="text col-lg-7">
+                <div class="text-inner d-flex align-items-center">
+                    <div class="content">
+                        <header class="post-header">
+                            <div class="category"><a href="#">Linda - Main Chef</a></div>
+                        </header>
+                        <p>Linda is a French dessert chef and chocolatier. She began her career at the age of 14 as an apprentice to Gaston Len?tre. She was awarded the title of World's Best Chef in 2016.</p>
+                        <footer class="post-footer d-flex align-items-center">
+                            <a href="#" class="author d-flex align-items-center flex-wrap">
+                                <div class="avatar"><img src="{% static 'img/beauty.jpg' %}" alt="..." class="img-fluid"></div>
+                                <div class="title"><span>Linda</span></div>
+                            </a>
+                            <div class="date"><i class="icon-clock"></i> 2 months ago</div>
+                            <div class="comments"><i class="icon-comment"></i>12</div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="image col-lg-5"><img src="{% static 'img/beauty.jpg' %}" alt="..."></div>
+        </div>
+        <!-- Post        -->
+        <div class="row d-flex align-items-stretch">
+            <div class="image col-lg-5"><img src="{% static 'img/beauty1.jpg' %}" alt="..."></div>
+            <div class="text col-lg-7">
+                <div class="text-inner d-flex align-items-center">
+                    <div class="content">
+                        <header class="post-header">
+                            <div class="category"><a href="#">Amy - Manager</a></div>
+                        </header>
+                        <p>Amy is the manager of Amorino. She is able to taste test products. She also ensures the quality of our products are maintained to the highest standards.</p>
+                        <footer class="post-footer d-flex align-items-center">
+                            <a href="#" class="author d-flex align-items-center flex-wrap">
+                                <div class="avatar"><img src="{% static 'img/beauty1.jpg' %}" alt="..." class="img-fluid"></div>
+                                <div class="title"><span>Amy</span></div>
+                            </a>
+                            <div class="date"><i class="icon-clock"></i> 2 months ago</div>
+                            <div class="comments"><i class="icon-comment"></i>12</div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Post                            -->
+        <div class="row d-flex align-items-stretch">
+            <div class="text col-lg-7">
+                <div class="text-inner d-flex align-items-center">
+                    <div class="content">
+                        <header class="post-header">
+                            <div class="category"><a href="#">Amber - Manager Assistant</a></div>
+
+                        </header>
+                        <p>Amber works for Amorino for about 10 years. She enjoys spending time with customers. If you have any concern about the food, please tell Amber.</p>
+                        <footer class="post-footer d-flex align-items-center">
+                            <a href="#" class="author d-flex align-items-center flex-wrap">
+                                <div class="avatar"><img src="{% static 'img/beauty2.jpg' %}" alt="..." class="img-fluid"></div>
+                                <div class="title"><span>Amber</span></div>
+                            </a>
+                            <div class="date"><i class="icon-clock"></i> 2 months ago</div>
+                            <div class="comments"><i class="icon-comment"></i>12</div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="image col-lg-5"><img src="{% static 'img/beauty2.jpg' %}" alt="..."></div>
+        </div>
+    </div>
+</section>
+<!-- Divider Section-->
+<section style="background: url({% static 'img/divider-bg.jpg' %}); background-size: cover; background-position: center bottom" class="divider">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h2>Our secret for an Italian gelato par excellence: To always choose the highest quality ingrédients To source them from where they are at their best </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Latest Posts -->
+<section class="latest-posts">
+    <div class="container">
+        <header>
+            <h2>Latest Products</h2>
+        </header>
+        <div class="row">
+            <div class="post col-md-4">
+                <div class="post-thumbnail">
+                    <a href="post.html"><img src="{% static 'img/birthday-cake.jpg' %}" alt="..." class="img-fluid"></a>
+                </div>
+                <div class="post-details">
+                    <div class="post-meta d-flex justify-content-between">
+                        <div class="date">20 May | 2019</div>
+                        <div class="category"><a href="#">Desserts</a></div>
+                    </div>
+                    <a href="post.html">
+                        <h3 class="h4">Sliced Cake - Product Code:SC011</h3>
+                    </a>
+                    <p class="text-muted">We are known for our exceptional tasting cakes! We pride ourselves on creating cakes that taste as good as they look!</p>
+                </div>
+            </div>
+            <div class="post col-md-4">
+                <div class="post-thumbnail">
+                    <a href="post.html"><img src="{% static 'img/cupcake.jpg' %}" alt="..." class="img-fluid"></a>
+                </div>
+                <div class="post-details">
+                    <div class="post-meta d-flex justify-content-between">
+                        <div class="date">20 May | 2019</div>
+                        <div class="category"><a href="#">Desserts</a></div>
+                    </div>
+                    <a href="post.html">
+                        <h3 class="h4">Cup Cake - Product Code:CC002</h3>
+                    </a>
+                    <p class="text-muted">All of our Plated / Individual desserts are designed be easily unboxed and plated for a wide arry of functions. Many of the items below are also freezable for easy on hand service.</p>
+                </div>
+            </div>
+            <div class="post col-md-4">
+                <div class="post-thumbnail">
+                    <a href="post.html"><img src="{% static 'img/blog-3.jpg' %}" alt="..." class="img-fluid"></a>
+                </div>
+                <div class="post-details">
+                    <div class="post-meta d-flex justify-content-between">
+                        <div class="date">20 May | 2019</div>
+                        <div class="category"><a href="#">Desserts</a></div>
+                    </div>
+                    <a href="post.html">
+                        <h3 class="h4">PanCake - Product Code:PC011</h3>
+                    </a>
+                    <p class="text-muted">All of our pancake are made directly in environmentally friendly trays have marked edges for easy cutting. Our pancake are made from scratch by hand using whole ingredients in the artisan way.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Newsletter Section-->
+<section class="newsletter no-padding-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Subscribe to Newsletter</h2>
+                <p class="text-big">Welcome to Subscribe us! We have been a family run business for over 30 years. If the marketing of grocery and the preparation and presentation of food could be considered an art form, it is obvious at Amorino’s. So come to our store today.</p>
+            </div>
+            <div class="col-md-8">
+                <div class="form-holder">
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Type your email address">
+                            <button type="submit" class="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock content %}
